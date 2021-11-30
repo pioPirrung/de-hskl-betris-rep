@@ -2,7 +2,7 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_iluT4ExDEeyPd6UCU1TUug" name="MyDiagram" author="chris" bonitaVersion="7.13.0" bonitaModelVersion="7.12.0-004">
     <elements xmi:type="process:Pool" xmi:id="_iluT4UxDEeyPd6UCU1TUug" name="Pool">
-      <elements xmi:type="process:Lane" xmi:id="_iluT4kxDEeyPd6UCU1TUug" name="Elektriker" actor="_iluT-0xDEeyPd6UCU1TUug">
+      <elements xmi:type="process:Lane" xmi:id="_iluT4kxDEeyPd6UCU1TUug" name="Elektriker" actor="_AwsXEFG9EeyQ3LYGAULVzQ">
         <elements xmi:type="process:Task" xmi:id="_iluT50xDEeyPd6UCU1TUug" name="Step1" outgoing="_ziycgExEEeyDI-My2cnkmA" incoming="_iluT-ExDEeyPd6UCU1TUug" overrideActorsOfTheLane="false">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_iluT6ExDEeyPd6UCU1TUug" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_iluT6UxDEeyPd6UCU1TUug" name="" content="" returnTypeFixed="true"/>
@@ -13,7 +13,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_iluT7kxDEeyPd6UCU1TUug" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_iluT70xDEeyPd6UCU1TUug" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_iluT8ExDEeyPd6UCU1TUug">
-            <targetForm xmi:type="expression:Expression" xmi:id="_iluT8UxDEeyPd6UCU1TUug" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_KAcR4FHCEeyQ3LYGAULVzQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_iluT8kxDEeyPd6UCU1TUug"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_iluT80xDEeyPd6UCU1TUug" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -24,16 +24,30 @@
           <stepSummary xmi:type="expression:Expression" xmi:id="_yd0_kkxEEeyDI-My2cnkmA" name="" content="" returnTypeFixed="true"/>
         </elements>
       </elements>
-      <elements xmi:type="process:Lane" xmi:id="_yxmasExFEeyDI-My2cnkmA" name="Maschinenführer">
+      <elements xmi:type="process:Lane" xmi:id="_yxmasExFEeyDI-My2cnkmA" name="Maschinenführer" actor="_BqKVsFG9EeyQ3LYGAULVzQ">
         <elements xmi:type="process:StartEvent" xmi:id="_iluT40xDEeyPd6UCU1TUug" name="Start1" outgoing="_iluT-ExDEeyPd6UCU1TUug">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_iluT5ExDEeyPd6UCU1TUug" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_iluT5UxDEeyPd6UCU1TUug" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_iluT5kxDEeyPd6UCU1TUug" name="" content="" returnTypeFixed="true"/>
         </elements>
       </elements>
-      <elements xmi:type="process:Lane" xmi:id="_zAo8QExFEeyDI-My2cnkmA" name="Mechatroniker"/>
+      <elements xmi:type="process:Lane" xmi:id="_zAo8QExFEeyDI-My2cnkmA" name="Mechatroniker" actor="__ZhIwFG8EeyQ3LYGAULVzQ"/>
+      <elements xmi:type="process:Lane" xmi:id="_sN3MMFG8EeyQ3LYGAULVzQ" name="Lager" actor="_88P1EFG8EeyQ3LYGAULVzQ"/>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_eQsb0FG-EeyQ3LYGAULVzQ" name="defekteMaschine" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.Maschine">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_mgOCAVG-EeyQ3LYGAULVzQ" name="initDefekteMaschine()" content="def maschineVar = new com.company.model.Maschine()&#xD;&#xA;maschineVar.nameAntragsteller = defekteMaschineInput?.nameAntragsteller&#xD;&#xA;maschineVar.nameMaschine = defekteMaschineInput?.nameMaschine&#xD;&#xA;maschineVar.seriennummer = defekteMaschineInput?.seriennummer&#xD;&#xA;maschineVar.hersteller = defekteMaschineInput?.hersteller&#xD;&#xA;maschineVar.defekt = {&#xD;&#xA;&#x9;//Retrieve aggregated DefektTyp using its DAO and persistenceId&#xD;&#xA;&#x9;def defektTypVar = defektTypDAO.findByPersistenceId(defekteMaschineInput?.defekt?.persistenceId_string?.trim() ? defekteMaschineInput.defekt.persistenceId_string.toLong() : null)&#xD;&#xA;&#x9;if (!defektTypVar) {&#xD;&#xA;&#x9;&#x9;if (defekteMaschineInput?.defekt?.persistenceId_string?.trim() ? defekteMaschineInput.defekt.persistenceId_string.toLong() : null) {&#xD;&#xA;&#x9;&#x9;&#x9;throw new IllegalArgumentException(&quot;The aggregated reference of type `DefektTyp` with the persistence id &quot; + defekteMaschineInput?.defekt?.persistenceId_string?.trim() ? defekteMaschineInput.defekt.persistenceId_string.toLong() : null + &quot; has not been found.&quot;)&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;return null&#xD;&#xA;&#x9;}&#xD;&#xA;&#x9;return defektTypVar}()&#xD;&#xA;maschineVar.beschreibung = defekteMaschineInput?.beschreibung&#xD;&#xA;return maschineVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Maschine">
+          <referencedElements xmi:type="process:ContractInput" xmi:id="_mgOCAlG-EeyQ3LYGAULVzQ" name="defekteMaschineInput" type="COMPLEX"/>
+        </defaultValue>
+      </data>
+      <data xmi:type="process:Data" xmi:id="_H9LrkFHAEeyQ3LYGAULVzQ" name="test" dataType="_DmYqcFHAEeyQ3LYGAULVzQ">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_H9MSoFHAEeyQ3LYGAULVzQ" content=""/>
+      </data>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_0c8pUFHDEeyQ3LYGAULVzQ" name="defektTyp" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.DefektTyp">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_3GnaQ1HDEeyQ3LYGAULVzQ" name="initDefektTyp()" content="def defektTypVar = new com.company.model.DefektTyp()&#xD;&#xA;defektTypVar.elektrisch = defektTypInput?.elektrisch&#xD;&#xA;defektTypVar.mechanisch = defektTypInput?.mechanisch&#xD;&#xA;return defektTypVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.DefektTyp">
+          <referencedElements xmi:type="process:ContractInput" xmi:id="_3GnaRFHDEeyQ3LYGAULVzQ" name="defektTypInput" type="COMPLEX"/>
+        </defaultValue>
+      </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_iluT9ExDEeyPd6UCU1TUug">
-        <targetForm xmi:type="expression:Expression" xmi:id="_iluT9UxDEeyPd6UCU1TUug" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_iluT9UxDEeyPd6UCU1TUug" name="reparaturAntrag" content="29d5aadc-aab8-4743-bcd0-bcf9d671ffdb" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_iluT9kxDEeyPd6UCU1TUug">
         <targetForm xmi:type="expression:Expression" xmi:id="_iluT90xDEeyPd6UCU1TUug" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -46,8 +60,26 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_zizDkExEEeyDI-My2cnkmA"/>
         <condition xmi:type="expression:Expression" xmi:id="_zizDkUxEEeyDI-My2cnkmA" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <actors xmi:type="process:Actor" xmi:id="_iluT-0xDEeyPd6UCU1TUug" documentation="This is an example of actor that is mapped to any ACME users" name="Employee actor" initiator="true"/>
-      <contract xmi:type="process:Contract" xmi:id="_iluT_ExDEeyPd6UCU1TUug"/>
+      <actors xmi:type="process:Actor" xmi:id="_88P1EFG8EeyQ3LYGAULVzQ" name="Lagerist"/>
+      <actors xmi:type="process:Actor" xmi:id="__ZhIwFG8EeyQ3LYGAULVzQ" name="Mechatroniker"/>
+      <actors xmi:type="process:Actor" xmi:id="_AwsXEFG9EeyQ3LYGAULVzQ" name="Elektriker"/>
+      <actors xmi:type="process:Actor" xmi:id="_BqKVsFG9EeyQ3LYGAULVzQ" name="Maschinenführer" initiator="true"/>
+      <contract xmi:type="process:Contract" xmi:id="_iluT_ExDEeyPd6UCU1TUug">
+        <inputs xmi:type="process:ContractInput" xmi:id="_mgNa8FG-EeyQ3LYGAULVzQ" name="defekteMaschineInput" type="COMPLEX" dataReference="defekteMaschine">
+          <inputs xmi:type="process:ContractInput" xmi:id="_mgNa8VG-EeyQ3LYGAULVzQ" name="nameAntragsteller"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_mgNa8lG-EeyQ3LYGAULVzQ" name="nameMaschine"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_mgNa81G-EeyQ3LYGAULVzQ" name="seriennummer"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_mgNa9FG-EeyQ3LYGAULVzQ" name="hersteller"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_mgNa9VG-EeyQ3LYGAULVzQ" name="defekt" type="COMPLEX">
+            <inputs xmi:type="process:ContractInput" xmi:id="_mgNa9lG-EeyQ3LYGAULVzQ" name="persistenceId_string"/>
+          </inputs>
+          <inputs xmi:type="process:ContractInput" xmi:id="_mgNa91G-EeyQ3LYGAULVzQ" name="beschreibung"/>
+        </inputs>
+        <inputs xmi:type="process:ContractInput" xmi:id="_3GnaQFHDEeyQ3LYGAULVzQ" name="defektTypInput" type="COMPLEX" dataReference="defektTyp">
+          <inputs xmi:type="process:ContractInput" xmi:id="_3GnaQVHDEeyQ3LYGAULVzQ" name="elektrisch"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_3GnaQlHDEeyQ3LYGAULVzQ" name="mechanisch"/>
+        </inputs>
+      </contract>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_iluT_UxDEeyPd6UCU1TUug">
         <name xmi:type="expression:Expression" xmi:id="_iluT_kxDEeyPd6UCU1TUug" content="" returnTypeFixed="true"/>
         <value xmi:type="expression:Expression" xmi:id="_iluT_0xDEeyPd6UCU1TUug" content="" returnTypeFixed="true"/>
@@ -78,6 +110,10 @@
     <datatypes xmi:type="process:JavaType" xmi:id="_iluUEkxDEeyPd6UCU1TUug" name="Java_object"/>
     <datatypes xmi:type="process:XMLType" xmi:id="_iluUE0xDEeyPd6UCU1TUug" name="XML"/>
     <datatypes xmi:type="process:BusinessObjectType" xmi:id="_iluUFExDEeyPd6UCU1TUug" name="Business_Object"/>
+    <datatypes xmi:type="process:EnumType" xmi:id="_DmYqcFHAEeyQ3LYGAULVzQ" name="defektTyp">
+      <literals>elektrisch</literals>
+      <literals>mechanisch</literals>
+    </datatypes>
   </process:MainProcess>
   <notation:Diagram xmi:id="_iluUFUxDEeyPd6UCU1TUug" type="Process" element="_iluT4ExDEeyPd6UCU1TUug" name="MyDiagram" measurementUnit="Pixel">
     <children xmi:type="notation:Node" xmi:id="_iluUFkxDEeyPd6UCU1TUug" type="2007" element="_iluT4UxDEeyPd6UCU1TUug">
@@ -110,7 +146,7 @@
               <children xmi:type="notation:DecorationNode" xmi:id="_iluUIExDEeyPd6UCU1TUug" type="5024">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_iluUIUxDEeyPd6UCU1TUug" y="5"/>
               </children>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iluUIkxDEeyPd6UCU1TUug" x="61" y="100"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iluUIkxDEeyPd6UCU1TUug" x="77" y="70"/>
             </children>
           </children>
           <styles xmi:type="notation:DescriptionStyle" xmi:id="_yxqFEUxFEeyDI-My2cnkmA"/>
@@ -126,7 +162,16 @@
           <styles xmi:type="notation:FontStyle" xmi:id="_zAqKYkxFEeyDI-My2cnkmA" fontName="Segoe UI"/>
           <styles xmi:type="notation:LineStyle" xmi:id="_zAqKY0xFEeyDI-My2cnkmA"/>
           <styles xmi:type="notation:FillStyle" xmi:id="_zAqKZ0xFEeyDI-My2cnkmA"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zAqKZExFEeyDI-My2cnkmA" x="23" y="351" width="2257" height="171"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zAqKZExFEeyDI-My2cnkmA" x="58" y="351" width="2247" height="171"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_sN3zQFG8EeyQ3LYGAULVzQ" type="3007" element="_sN3MMFG8EeyQ3LYGAULVzQ">
+          <children xmi:type="notation:DecorationNode" xmi:id="_sN3zRVG8EeyQ3LYGAULVzQ" type="5007"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_sN3zRlG8EeyQ3LYGAULVzQ" type="7002"/>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_sN3zQVG8EeyQ3LYGAULVzQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_sN3zQlG8EeyQ3LYGAULVzQ" fontName="Segoe UI"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_sN3zQ1G8EeyQ3LYGAULVzQ"/>
+          <styles xmi:type="notation:FillStyle" xmi:id="_sN4aUFG8EeyQ3LYGAULVzQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sN3zRFG8EeyQ3LYGAULVzQ" x="58" y="522" width="2247" height="250"/>
         </children>
       </children>
       <styles xmi:type="notation:DescriptionStyle" xmi:id="_iluUKExDEeyPd6UCU1TUug"/>

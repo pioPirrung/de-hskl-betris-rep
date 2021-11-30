@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="MyOrganization">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="Hans Peter">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="Alfred Gideon">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="Alfons Fonsi">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="Herbert Berthold">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="Elektriker">
+      <displayName>Elektriker</displayName>
+    </role>
+    <role name="Mechatroniker">
+      <displayName>Mechatroniker</displayName>
+    </role>
+    <role name="Maschinenführer">
+      <displayName>Maschinenführer</displayName>
+    </role>
+    <role name="Lagerist">
+      <displayName>Lagerist</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="Arbeiter">
+      <displayName>Arbeiter</displayName>
+    </group>
+    <group name="Instandhaltung">
+      <displayName>Instandhaltung</displayName>
+    </group>
+    <group name="Ersatzteillager">
+      <displayName>Ersatzteillager</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>Hans Peter</userName>
+      <roleName>Maschinenführer</roleName>
+      <groupName>Arbeiter</groupName>
+    </membership>
+    <membership>
+      <userName>Alfred Gideon</userName>
+      <roleName>Elektriker</roleName>
+      <groupName>Instandhaltung</groupName>
+    </membership>
+    <membership>
+      <userName>Alfons Fonsi</userName>
+      <roleName>Mechatroniker</roleName>
+      <groupName>Instandhaltung</groupName>
+    </membership>
+    <membership>
+      <userName>Herbert Berthold</userName>
+      <roleName>Lagerist</roleName>
+      <groupName>Ersatzteillager</groupName>
+    </membership>
+  </memberships>
+</organization:Organization>

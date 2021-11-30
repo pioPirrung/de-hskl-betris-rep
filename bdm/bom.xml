@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<businessObjectModel xmlns="http://documentation.bonitasoft.com/bdm-xml-schema/1.0" modelVersion="1.0" productVersion="7.13.0">
+    <businessObjects>
+        <businessObject qualifiedName="com.company.model.DefektTyp">
+            <fields>
+                <field type="STRING" length="255" name="elektrisch" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="mechanisch" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Maschine">
+            <fields>
+                <field type="STRING" length="255" name="nameAntragsteller" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nameMaschine" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="seriennummer" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="hersteller" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.company.model.DefektTyp" fetchType="LAZY" name="defekt" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="beschreibung" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="status" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="ersatzteil" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="istLagernd" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+    </businessObjects>
+</businessObjectModel>

@@ -2,25 +2,33 @@
 <organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="MyOrganization">
   <customUserInfoDefinitions/>
   <users>
-    <user userName="Hans Peter">
+    <user userName="hans">
+      <firstName>Hans</firstName>
+      <lastName>Peter</lastName>
       <personalData/>
       <professionalData/>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
-    <user userName="Alfred Gideon">
+    <user userName="alfred">
+      <firstName>Alfred</firstName>
+      <lastName>Gideon</lastName>
       <personalData/>
       <professionalData/>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
-    <user userName="Alfons Fonsi">
+    <user userName="alfons">
+      <firstName>Alfons</firstName>
+      <lastName>Fonsi</lastName>
       <personalData/>
       <professionalData/>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
-    <user userName="Herbert Berthold">
+    <user userName="herbert">
+      <firstName>Herbert</firstName>
+      <lastName>Bertold</lastName>
       <personalData/>
       <professionalData/>
       <password encrypted="false">bpm</password>
@@ -54,22 +62,22 @@
   </groups>
   <memberships>
     <membership>
-      <userName>Hans Peter</userName>
+      <userName>hans</userName>
       <roleName>Maschinenführer</roleName>
       <groupName>Arbeiter</groupName>
     </membership>
     <membership>
-      <userName>Alfred Gideon</userName>
+      <userName>alfred</userName>
       <roleName>Elektriker</roleName>
       <groupName>Instandhaltung</groupName>
     </membership>
     <membership>
-      <userName>Alfons Fonsi</userName>
+      <userName>alfons</userName>
       <roleName>Mechatroniker</roleName>
       <groupName>Instandhaltung</groupName>
     </membership>
     <membership>
-      <userName>Herbert Berthold</userName>
+      <userName>herbert</userName>
       <roleName>Lagerist</roleName>
       <groupName>Ersatzteillager</groupName>
     </membership>

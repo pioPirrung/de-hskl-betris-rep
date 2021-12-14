@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "defektMelden",
   "name" : "defektMelden",
-  "lastUpdate" : 1638870417431,
+  "lastUpdate" : 1639476249873,
   "rows" : [
     [
       {
@@ -20,7 +20,7 @@
             "value" : false
           }
         },
-        "reference" : "f47cb6bd-8f79-4342-a56b-edf718b77abe",
+        "reference" : "a8e2ff08-ba9e-423e-a061-c6e5d1da8cbb",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -29,7 +29,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "11b779ea-8432-4b10-b18e-4ec63c69f455",
+          "reference" : "fcde0147-435e-41bf-bba3-9a98a1569672",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -68,7 +68,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "45e7c8af-449b-481e-b220-7fddf86eff78",
+                "reference" : "3901ad2d-dd56-481b-a974-f96da0ee292d",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -100,7 +100,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "1791d032-1ed1-4340-94a0-ab2bacc042df",
+                "reference" : "230a98f5-ebec-41c0-82fe-38fadba39b31",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -162,7 +162,7 @@
                           "value" : false
                         }
                       },
-                      "reference" : "9740481e-e572-4dd5-9822-e8b485acae2b",
+                      "reference" : "ea22499a-655b-4507-b0d5-c3e1318d9ad4",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -226,7 +226,7 @@
                           "value" : false
                         }
                       },
-                      "reference" : "8ceb0442-0918-48ed-ba1f-d60b08ae6977",
+                      "reference" : "d7f6adc5-a13e-4b32-8638-b8c2a22ee13c",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -290,7 +290,7 @@
                           "value" : false
                         }
                       },
-                      "reference" : "c8eabbd1-6a11-46dd-8125-aabfcdef96b1",
+                      "reference" : "43eaadaf-a03f-4c3c-9e57-fb41a387981d",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -352,9 +352,27 @@
                         "required" : {
                           "type" : "constant",
                           "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
-                      "reference" : "2fc6669c-3405-4bf7-aa9d-44a58bfec043",
+                      "reference" : "a260bb83-0881-4d66-8b9f-d47419cf8cee",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -364,61 +382,66 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
                         "xs" : 12,
-                        "lg" : 12
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 6
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
+                        "cssClasses" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : ""
                         },
                         "hidden" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "labelPosition" : {
+                        "disabled" : {
                           "type" : "constant",
-                          "value" : "top"
+                          "value" : false
                         },
-                        "cssClasses" : {
+                        "required" : {
                           "type" : "constant",
-                          "value" : ""
+                          "value" : false
                         },
-                        "availableValues" : {
-                          "type" : "expression",
-                          "value" : "defektTyp_query"
-                        },
-                        "labelWidth" : {
+                        "labelHidden" : {
                           "type" : "constant",
-                          "value" : 1
+                          "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
                           "value" : "Defekt"
                         },
-                        "placeholder" : {
+                        "labelPosition" : {
                           "type" : "constant",
-                          "value" : "Select a Defekt"
+                          "value" : "top"
                         },
-                        "dimension" : {
+                        "labelWidth" : {
                           "type" : "constant",
-                          "value" : 12
+                          "value" : 1
+                        },
+                        "placeholder" : {
+                          "type" : "interpolation",
+                          "value" : "Wähle einen Defekt"
+                        },
+                        "availableValues" : {
+                          "type" : "expression",
+                          "value" : "defektInput"
+                        },
+                        "displayedKey" : {
+                          "type" : "constant"
+                        },
+                        "returnedKey" : {
+                          "type" : "constant"
                         },
                         "value" : {
                           "type" : "variable",
                           "value" : "formInput.maschineInput.defekt"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
                         }
                       },
-                      "reference" : "3f68c4c8-d5f6-4e1e-8b66-a6f4e9a840bd",
+                      "reference" : "84809290-4fb4-4aa0-99c6-e7f3aabb6012",
                       "hasValidationError" : false,
-                      "id" : "pbSelect",
-                      "description" : ""
+                      "id" : "pbSelect"
                     }
                   ],
                   [
@@ -479,7 +502,7 @@
                           "value" : false
                         }
                       },
-                      "reference" : "7e10e61a-ccf1-4bcf-8955-abf8c5a0cc42",
+                      "reference" : "2166287c-7205-4a3e-a378-2a2fa2f22996",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -559,7 +582,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "ee7ffced-3e69-4471-9b76-79e77e78cce0",
+                "reference" : "60d6d034-424c-4ca8-aa12-a0d15a07fb17",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -611,7 +634,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "6c1024e3-67cd-4289-808e-19b8c9376e9b",
+                "reference" : "9a7521b4-4d55-47b1-878d-fd9aba074714",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -624,14 +647,14 @@
   ],
   "assets" : [
     {
-      "id" : "73f65bfb-71e0-4205-bdac-88a279687e34",
+      "id" : "6df70ca4-0c0e-42d1-9a5c-7404ad87472c",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "bff2e0f4-4afc-4093-9865-c551128425c9",
+      "id" : "abb89a00-57d9-43b4-9482-98e35ecb8f57",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,
@@ -644,22 +667,13 @@
       "type" : "json",
       "value" : [
         "{\r",
-        "  \"defektTypInput\" : {\r",
-        "    \"elektrisch\" : \"\",\r",
-        "    \"mechanisch\" : \"\"\r",
-        "  },\r",
         "  \"maschineInput\" : {\r",
         "    \"nameAntragsteller\" : \"\",\r",
         "    \"nameMaschine\" : \"\",\r",
         "    \"seriennummer\" : \"\",\r",
         "    \"hersteller\" : \"\",\r",
-        "    \"defekt\" : {\r",
-        "      \"persistenceId_string\" : \"\"\r",
-        "    },\r",
+        "    \"defekt\" : \"\",\r",
         "    \"beschreibung\" : \"\"\r",
-        "  },\r",
-        "  \"statusReparaturInput\" : {\r",
-        "    \"status\" : \"\"\r",
         "  }\r",
         "}"
       ],
@@ -684,23 +698,21 @@
       "type" : "expression",
       "value" : [
         "return {",
-        "\tdefektTypInput: $data.formInput.defektTypInput,",
-        "\tmaschineInput: $data.formInput.maschineInput,",
-        "\tstatusReparaturInput: $data.formInput.statusReparaturInput",
+        "\tmaschineInput: $data.formInput.maschineInput",
         "}"
       ],
       "exposed" : false
     },
-    "defektTyp_query" : {
+    "defektInput" : {
       "type" : "json",
       "value" : [
-        "[{\"typ\":\"Elektrisch\"}, {\"typ\":\"Mechanisch\"}]"
+        "[\"Elektrisch\", \"Mechanisch\"]"
       ],
       "exposed" : false
     }
   },
   "hasValidationError" : false,
-  "uuid" : "bf29720a-3c03-4c5a-8a8c-adf4782ce335",
+  "uuid" : "8978a360-4c3a-4bef-a11f-0002432544a8",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }

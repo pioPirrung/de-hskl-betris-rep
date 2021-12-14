@@ -1,9 +1,112 @@
 {
   "modelVersion" : "2.2",
-  "id" : "reparaturAntrag",
-  "name" : "reparaturAntrag",
-  "lastUpdate" : 1638266368075,
+  "id" : "ELAntragAnnehmen",
+  "name" : "ELAntragAnnehmen",
+  "lastUpdate" : 1639478239870,
   "rows" : [
+    [
+      {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : { },
+        "reference" : "4851bd33-4b73-4b6d-907d-f007e0718fd0",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "md" : 12,
+                "sm" : 12,
+                "xs" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "level" : {
+                  "type" : "constant",
+                  "value" : "Level 1"
+                },
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "text" : {
+                  "type" : "interpolation",
+                  "value" : "{{ task.displayName }}"
+                },
+                "alignment" : {
+                  "type" : "constant",
+                  "value" : "center"
+                },
+                "dimension" : {
+                  "type" : "constant",
+                  "value" : 12
+                }
+              },
+              "reference" : "defe7a70-61f2-47e0-863f-acec65ab7666",
+              "hasValidationError" : false,
+              "id" : "pbTitle",
+              "description" : ""
+            }
+          ],
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "md" : 12,
+                "sm" : 12,
+                "xs" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "allowHtml" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "labelHidden" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "label" : {
+                  "type" : "interpolation"
+                },
+                "text" : {
+                  "type" : "interpolation",
+                  "value" : "{{ task.displayDescription }}"
+                },
+                "alignment" : {
+                  "type" : "constant",
+                  "value" : "left"
+                },
+                "dimension" : {
+                  "type" : "constant",
+                  "value" : 12
+                }
+              },
+              "reference" : "9b610374-633d-4687-997c-757742737d55",
+              "hasValidationError" : false,
+              "id" : "pbText",
+              "description" : ""
+            }
+          ]
+        ]
+      }
+    ],
     [
       {
         "type" : "formContainer",
@@ -11,7 +114,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "8694b547-ad4e-4a8a-b524-0cec70f52d1f",
+        "reference" : "e1d63fb9-bcab-416f-ae51-bfc86866c1df",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -20,7 +123,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "668962d2-9902-4c28-8b10-85b43099a19c",
+          "reference" : "3822ea42-648e-454f-97f3-d32b99f021dd",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -48,7 +151,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Defekte Maschine"
+                    "value" : "Maschine"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -59,7 +162,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "81f17ab2-c1bf-43a4-88a1-a226789e6635",
+                "reference" : "26f328b6-4034-44bf-ab26-5870b230ec48",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -92,7 +195,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "ff1ed653-d0dd-4af7-8482-63c2aa4365af",
+                "reference" : "2aa2577a-0a9f-4396-a501-2ec8fc35fc6f",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -128,7 +231,7 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "label" : {
                           "type" : "interpolation",
@@ -147,14 +250,32 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.defekteMaschineInput.nameAntragsteller"
+                          "value" : "maschine.nameAntragsteller"
                         },
                         "required" : {
                           "type" : "constant",
                           "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
-                      "reference" : "8a4e8e7d-2ac6-450c-9409-4175e2405757",
+                      "reference" : "19fbcce0-86da-4da4-a32c-ce19c5bb7109",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -192,7 +313,7 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "label" : {
                           "type" : "interpolation",
@@ -211,14 +332,32 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.defekteMaschineInput.nameMaschine"
+                          "value" : "maschine.nameMaschine"
                         },
                         "required" : {
                           "type" : "constant",
                           "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
-                      "reference" : "5e49d1a4-402a-4dca-92ee-e1cc3e873df0",
+                      "reference" : "ebce1321-fed5-43d1-be12-d25426943b66",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -256,7 +395,7 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "label" : {
                           "type" : "interpolation",
@@ -275,14 +414,32 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.defekteMaschineInput.seriennummer"
+                          "value" : "maschine.seriennummer"
                         },
                         "required" : {
                           "type" : "constant",
                           "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
-                      "reference" : "b48bed94-47c3-4c58-ad4f-092ec88f57d9",
+                      "reference" : "94b78b6b-a707-49e7-a52a-c6fced45a7e7",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -320,7 +477,7 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "label" : {
                           "type" : "interpolation",
@@ -339,17 +496,101 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.defekteMaschineInput.hersteller"
+                          "value" : "maschine.hersteller"
                         },
                         "required" : {
                           "type" : "constant",
                           "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
-                      "reference" : "8996514e-66dd-4e3c-9fd5-27c4fb21a3d2",
+                      "reference" : "aa959256-2686-4a9f-878d-baa016c8cc0d",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 6
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "disabled" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Defekt"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "placeholder" : {
+                          "type" : "interpolation",
+                          "value" : "Wähle einen Defekt"
+                        },
+                        "availableValues" : {
+                          "type" : "expression",
+                          "value" : "defektInput"
+                        },
+                        "displayedKey" : {
+                          "type" : "constant"
+                        },
+                        "returnedKey" : {
+                          "type" : "constant"
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "maschine.defekt"
+                        }
+                      },
+                      "reference" : "65ab491c-ac8b-43e7-9efa-d7a6ecf1a805",
+                      "hasValidationError" : false,
+                      "id" : "pbSelect"
                     }
                   ],
                   [
@@ -378,21 +619,24 @@
                           "type" : "constant",
                           "value" : ""
                         },
-                        "availableValues" : {
-                          "type" : "expression",
-                          "value" : "defektTyp_query"
-                        },
                         "labelWidth" : {
                           "type" : "constant",
                           "value" : 1
                         },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Defekt"
+                          "value" : "Beschreibung"
                         },
                         "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
                           "type" : "constant",
-                          "value" : "Wähle einen Defekt"
+                          "value" : "text"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -400,28 +644,79 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.defekteMaschineInput.defekt"
+                          "value" : "maschine.beschreibung"
                         },
                         "required" : {
                           "type" : "constant",
                           "value" : false
                         },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
+                        }
+                      },
+                      "reference" : "eb911442-c15f-4179-a9d8-7c5d370574bd",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
                         "disabled" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "displayedKey" : {
-                          "type" : "constant",
-                          "value" : "name"
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Ersatzteil Benoetigt"
                         },
-                        "returnedKey" : {
+                        "dimension" : {
                           "type" : "constant",
-                          "value" : "name"
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "maschine.ersatzteilBenoetigt"
                         }
                       },
-                      "reference" : "cc2681e1-04ad-4de6-95e9-cbd30824a277",
+                      "reference" : "8bb14541-8f07-406e-bbb6-4f1e56768d9c",
                       "hasValidationError" : false,
-                      "id" : "pbSelect",
+                      "id" : "pbCheckbox",
                       "description" : ""
                     }
                   ],
@@ -461,7 +756,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Beschreibung"
+                          "value" : "Name Reparateur"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -476,14 +771,14 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.defekteMaschineInput.beschreibung"
+                          "value" : "maschine.nameReparateur"
                         },
                         "required" : {
                           "type" : "constant",
                           "value" : false
                         }
                       },
-                      "reference" : "57b3e2ce-f9ab-4a87-9c45-9905fa8ac69a",
+                      "reference" : "984666e2-c712-4d16-b7bc-a3c9ef7e5de0",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -542,7 +837,7 @@
                   },
                   "action" : {
                     "type" : "constant",
-                    "value" : "Start process"
+                    "value" : "Submit task"
                   },
                   "collectionToModify" : {
                     "type" : "variable"
@@ -563,7 +858,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "d4e27eba-4b24-466b-878e-d3e1a56302a1",
+                "reference" : "68538002-97a1-40ad-9285-a811a0e0bb93",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -615,7 +910,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "8e6f1963-ce33-4a73-86a8-428fed127ad8",
+                "reference" : "97cf24f6-0287-4c9b-8de5-44c4649f5bad",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -628,14 +923,14 @@
   ],
   "assets" : [
     {
-      "id" : "b76c7004-e10e-4cc1-ad97-61182142e694",
+      "id" : "5126692e-28ba-408e-8dc0-80b7986e8dec",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "d5200616-ba34-4c85-aa97-4196bdce7c8b",
+      "id" : "ba44b984-2002-4a49-916a-e10445dfc717",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
@@ -644,21 +939,17 @@
   ],
   "inactiveAssets" : [ ],
   "variables" : {
-    "formInput" : {
-      "type" : "json",
+    "maschine" : {
+      "type" : "url",
       "value" : [
-        "{\r",
-        "  \"defekteMaschineInput\" : {\r",
-        "    \"nameAntragsteller\" : \"\",\r",
-        "    \"nameMaschine\" : \"\",\r",
-        "    \"seriennummer\" : \"\",\r",
-        "    \"hersteller\" : \"\",\r",
-        "    \"defekt\" : {\r",
-        "      \"persistenceId_string\" : \"\"\r",
-        "    },\r",
-        "    \"beschreibung\" : \"\"\r",
-        "  }\r",
-        "}"
+        "../{{context.maschine_ref.link}}"
+      ],
+      "exposed" : false
+    },
+    "task" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/userTask/{{taskId}}"
       ],
       "exposed" : false
     },
@@ -680,22 +971,48 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "return {",
-        "\tdefekteMaschineInput: $data.formInput.defekteMaschineInput",
+        "if( $data.maschine ){",
+        "\treturn {",
+        "\t\t//map maschine variable to expected task contract input",
+        "\t\tmaschineInput: {",
+        "\t\t\tnameAntragsteller: $data.maschine.nameAntragsteller !== undefined ? $data.maschine.nameAntragsteller : null,",
+        "\t\t\tnameMaschine: $data.maschine.nameMaschine !== undefined ? $data.maschine.nameMaschine : null,",
+        "\t\t\tseriennummer: $data.maschine.seriennummer !== undefined ? $data.maschine.seriennummer : null,",
+        "\t\t\thersteller: $data.maschine.hersteller !== undefined ? $data.maschine.hersteller : null,",
+        "\t\t\tdefekt: $data.maschine.defekt !== undefined ? $data.maschine.defekt : null,",
+        "\t\t\tbeschreibung: $data.maschine.beschreibung !== undefined ? $data.maschine.beschreibung : null,",
+        "\t\t\tersatzteilBenoetigt: $data.maschine.ersatzteilBenoetigt !== undefined ? $data.maschine.ersatzteilBenoetigt : null,",
+        "\t\t\tnameReparateur: $data.maschine.nameReparateur !== undefined ? $data.maschine.nameReparateur : null",
+        "\t\t}",
+        "\t}",
         "}"
       ],
       "exposed" : false
     },
-    "defektTyp_query" : {
+    "context" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/userTask/{{taskId}}/context"
+      ],
+      "exposed" : false
+    },
+    "taskId" : {
+      "type" : "urlparameter",
+      "value" : [
+        "id"
+      ],
+      "exposed" : false
+    },
+    "defektInput" : {
       "type" : "json",
       "value" : [
-        "[{ \"name\": \"Elektrisch\"},{\"name\": \"Mechanisch\"}]"
+        "[\"Elektrisch\", \"Mechanisch\"]"
       ],
       "exposed" : false
     }
   },
   "hasValidationError" : false,
-  "uuid" : "29d5aadc-aab8-4743-bcd0-bcf9d671ffdb",
+  "uuid" : "05872613-c1fe-4cea-905d-23953d48be45",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }

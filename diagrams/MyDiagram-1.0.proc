@@ -7,15 +7,114 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_iluT6ExDEeyPd6UCU1TUug" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_iluT6UxDEeyPd6UCU1TUug" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_iluT6kxDEeyPd6UCU1TUug" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_Kh6p8FzIEey9ZKKEy0NCwA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Kh6p8VzIEey9ZKKEy0NCwA" name="maschine" content="maschine" type="TYPE_VARIABLE" returnType="com.company.model.Maschine">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Kh6p8lzIEey9ZKKEy0NCwA" name="maschine" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.Maschine"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_Kh6p81zIEey9ZKKEy0NCwA" name="maschineInput.nameAntragsteller" content="maschineInput?.nameAntragsteller" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_Kh6p9FzIEey9ZKKEy0NCwA" name="maschineInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_Kh6p9VzIEey9ZKKEy0NCwA" type="JAVA_METHOD" expression="setNameAntragsteller">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_Kh6p9lzIEey9ZKKEy0NCwA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Kh6p91zIEey9ZKKEy0NCwA" name="maschine" content="maschine" type="TYPE_VARIABLE" returnType="com.company.model.Maschine">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Kh6p-FzIEey9ZKKEy0NCwA" name="maschine" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.Maschine"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_Kh6p-VzIEey9ZKKEy0NCwA" name="maschineInput.nameMaschine" content="maschineInput?.nameMaschine" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_Kh6p-lzIEey9ZKKEy0NCwA" name="maschineInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_Kh6p-1zIEey9ZKKEy0NCwA" type="JAVA_METHOD" expression="setNameMaschine">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_Kh6p_FzIEey9ZKKEy0NCwA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Kh6p_VzIEey9ZKKEy0NCwA" name="maschine" content="maschine" type="TYPE_VARIABLE" returnType="com.company.model.Maschine">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Kh6p_lzIEey9ZKKEy0NCwA" name="maschine" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.Maschine"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_Kh6p_1zIEey9ZKKEy0NCwA" name="maschineInput.seriennummer" content="maschineInput?.seriennummer" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_Kh6qAFzIEey9ZKKEy0NCwA" name="maschineInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_Kh6qAVzIEey9ZKKEy0NCwA" type="JAVA_METHOD" expression="setSeriennummer">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_Kh6qAlzIEey9ZKKEy0NCwA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Kh6qA1zIEey9ZKKEy0NCwA" name="maschine" content="maschine" type="TYPE_VARIABLE" returnType="com.company.model.Maschine">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Kh6qBFzIEey9ZKKEy0NCwA" name="maschine" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.Maschine"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_Kh6qBVzIEey9ZKKEy0NCwA" name="maschineInput.hersteller" content="maschineInput?.hersteller" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_Kh6qBlzIEey9ZKKEy0NCwA" name="maschineInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_Kh6qB1zIEey9ZKKEy0NCwA" type="JAVA_METHOD" expression="setHersteller">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_Kh6qCFzIEey9ZKKEy0NCwA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Kh6qCVzIEey9ZKKEy0NCwA" name="maschine" content="maschine" type="TYPE_VARIABLE" returnType="com.company.model.Maschine">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Kh6qClzIEey9ZKKEy0NCwA" name="maschine" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.Maschine"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_Kh6qC1zIEey9ZKKEy0NCwA" name="maschineInput.defekt" content="maschineInput?.defekt" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_Kh6qDFzIEey9ZKKEy0NCwA" name="maschineInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_Kh6qDVzIEey9ZKKEy0NCwA" type="JAVA_METHOD" expression="setDefekt">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_Kh6qDlzIEey9ZKKEy0NCwA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Kh6qD1zIEey9ZKKEy0NCwA" name="maschine" content="maschine" type="TYPE_VARIABLE" returnType="com.company.model.Maschine">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Kh6qEFzIEey9ZKKEy0NCwA" name="maschine" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.Maschine"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_Kh6qEVzIEey9ZKKEy0NCwA" name="maschineInput.beschreibung" content="maschineInput?.beschreibung" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_Kh6qElzIEey9ZKKEy0NCwA" name="maschineInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_Kh6qE1zIEey9ZKKEy0NCwA" type="JAVA_METHOD" expression="setBeschreibung">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_Kh6qFFzIEey9ZKKEy0NCwA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Kh6qFVzIEey9ZKKEy0NCwA" name="maschine" content="maschine" type="TYPE_VARIABLE" returnType="com.company.model.Maschine">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Kh6qFlzIEey9ZKKEy0NCwA" name="maschine" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.Maschine"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_Kh6qF1zIEey9ZKKEy0NCwA" name="maschineInput.ersatzteilBenoetigt" content="maschineInput?.ersatzteilBenoetigt" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_Kh6qGFzIEey9ZKKEy0NCwA" name="maschineInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_Kh6qGVzIEey9ZKKEy0NCwA" type="JAVA_METHOD" expression="setErsatzteilBenoetigt">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_Kh6qGlzIEey9ZKKEy0NCwA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Kh6qG1zIEey9ZKKEy0NCwA" name="maschine" content="maschine" type="TYPE_VARIABLE" returnType="com.company.model.Maschine">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Kh6qHFzIEey9ZKKEy0NCwA" name="maschine" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.Maschine"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_Kh6qHVzIEey9ZKKEy0NCwA" name="maschineInput.nameReparateur" content="maschineInput?.nameReparateur" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_Kh6qHlzIEey9ZKKEy0NCwA" name="maschineInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_Kh6qH1zIEey9ZKKEy0NCwA" type="JAVA_METHOD" expression="setNameReparateur">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_iluT60xDEeyPd6UCU1TUug" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_iluT7ExDEeyPd6UCU1TUug" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_iluT7UxDEeyPd6UCU1TUug" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_iluT7kxDEeyPd6UCU1TUug" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_iluT70xDEeyPd6UCU1TUug" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_iluT8ExDEeyPd6UCU1TUug">
-            <targetForm xmi:type="expression:Expression" xmi:id="_KOuasFdCEeyZc75ISJff_w" name="taskAutogeneratedForm" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_6cxdQFzFEey9ZKKEy0NCwA" name="ELAntragAnnehmen" content="05872613-c1fe-4cea-905d-23953d48be45" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_iluT8kxDEeyPd6UCU1TUug"/>
+          <contract xmi:type="process:Contract" xmi:id="_iluT8kxDEeyPd6UCU1TUug">
+            <inputs xmi:type="process:ContractInput" xmi:id="_Kh6C4FzIEey9ZKKEy0NCwA" name="maschineInput" type="COMPLEX" dataReference="maschine" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_Kh6C4VzIEey9ZKKEy0NCwA" name="nameAntragsteller" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Kh6C4lzIEey9ZKKEy0NCwA" name="nameMaschine" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Kh6C41zIEey9ZKKEy0NCwA" name="seriennummer" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Kh6C5FzIEey9ZKKEy0NCwA" name="hersteller" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Kh6C5VzIEey9ZKKEy0NCwA" name="defekt" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Kh6C5lzIEey9ZKKEy0NCwA" name="beschreibung" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Kh6C51zIEey9ZKKEy0NCwA" name="ersatzteilBenoetigt" type="BOOLEAN" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Kh6C6FzIEey9ZKKEy0NCwA" name="nameReparateur" createMode="false"/>
+            </inputs>
+          </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_iluT80xDEeyPd6UCU1TUug" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:XORGateway" xmi:id="_SpDcUFc6EeyZc75ISJff_w" name="EL Reparatur möglich?" outgoing="_vNDBQFc6EeyZc75ISJff_w _vl17wFc6EeyZc75ISJff_w" incoming="_TMSFMFc6EeyZc75ISJff_w">
@@ -33,7 +132,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_exqz91c6EeyZc75ISJff_w" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_exqz9lc6EeyZc75ISJff_w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_exqz-Vc6EeyZc75ISJff_w">
-            <targetForm xmi:type="expression:Expression" xmi:id="_KOuasVdCEeyZc75ISJff_w" name="taskAutogeneratedForm" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_sSIuEFzGEey9ZKKEy0NCwA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_exqz-Fc6EeyZc75ISJff_w"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_exqz-1c6EeyZc75ISJff_w" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -48,7 +147,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_hjlh91c6EeyZc75ISJff_w" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_hjlh9lc6EeyZc75ISJff_w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_hjlh-Vc6EeyZc75ISJff_w">
-            <targetForm xmi:type="expression:Expression" xmi:id="_KOuasldCEeyZc75ISJff_w" name="taskAutogeneratedForm" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_sSIuEVzGEey9ZKKEy0NCwA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_hjlh-Fc6EeyZc75ISJff_w"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_hjlh-1c6EeyZc75ISJff_w" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -85,7 +184,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_Cys8x1c8EeyZc75ISJff_w" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_Cys8xlc8EeyZc75ISJff_w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_Cys8yVc8EeyZc75ISJff_w">
-            <targetForm xmi:type="expression:Expression" xmi:id="_KOuas1dCEeyZc75ISJff_w" name="taskAutogeneratedForm" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_sSIuElzGEey9ZKKEy0NCwA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_Cys8yFc8EeyZc75ISJff_w"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_Cys8y1c8EeyZc75ISJff_w" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -117,7 +216,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_AcQfRVc7EeyZc75ISJff_w" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_AcQfRFc7EeyZc75ISJff_w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_AcQfR1c7EeyZc75ISJff_w">
-            <targetForm xmi:type="expression:Expression" xmi:id="_KOuatFdCEeyZc75ISJff_w" name="taskAutogeneratedForm" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_sSIuE1zGEey9ZKKEy0NCwA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_AcQfRlc7EeyZc75ISJff_w"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_AcQfSVc7EeyZc75ISJff_w" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -144,7 +243,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="__nxjwFc5EeyZc75ISJff_w" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="__nw8t1c5EeyZc75ISJff_w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="__nxjwlc5EeyZc75ISJff_w">
-            <targetForm xmi:type="expression:Expression" xmi:id="_KOuatVdCEeyZc75ISJff_w" name="taskAutogeneratedForm" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_sSIuFFzGEey9ZKKEy0NCwA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="__nxjwVc5EeyZc75ISJff_w"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="__nxjxFc5EeyZc75ISJff_w" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -164,7 +263,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_TFlK11c7EeyZc75ISJff_w" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_TFlK1lc7EeyZc75ISJff_w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_TFlK2Vc7EeyZc75ISJff_w">
-            <targetForm xmi:type="expression:Expression" xmi:id="_KOuatldCEeyZc75ISJff_w" name="taskAutogeneratedForm" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_sSIuFVzGEey9ZKKEy0NCwA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_TFlK2Fc7EeyZc75ISJff_w"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_TFlK21c7EeyZc75ISJff_w" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -179,7 +278,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_aHegR1c7EeyZc75ISJff_w" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_aHegRlc7EeyZc75ISJff_w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_aHegSVc7EeyZc75ISJff_w">
-            <targetForm xmi:type="expression:Expression" xmi:id="_KOuat1dCEeyZc75ISJff_w" name="taskAutogeneratedForm" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_sSIuFlzGEey9ZKKEy0NCwA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_aHegSFc7EeyZc75ISJff_w"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_aHegS1c7EeyZc75ISJff_w" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -195,24 +294,13 @@
           <stepSummary xmi:type="expression:Expression" xmi:id="_UzC8wlc8EeyZc75ISJff_w" name="" content="" returnTypeFixed="true"/>
         </elements>
       </elements>
-      <data xmi:type="process:BusinessObjectData" xmi:id="_0c8pUFHDEeyQ3LYGAULVzQ" name="defektTyp" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.DefektTyp">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_3GnaQ1HDEeyQ3LYGAULVzQ" name="initDefektTyp()" content="def defektTypVar = new com.company.model.DefektTyp()&#xD;&#xA;defektTypVar.elektrisch = defektTypInput?.elektrisch&#xD;&#xA;defektTypVar.mechanisch = defektTypInput?.mechanisch&#xD;&#xA;return defektTypVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.DefektTyp">
-          <referencedElements xmi:type="process:ContractInput" xmi:id="_3GnaRFHDEeyQ3LYGAULVzQ" name="defektTypInput" type="COMPLEX"/>
-        </defaultValue>
-      </data>
-      <data xmi:type="process:BusinessObjectData" xmi:id="_M43-sFdAEeyZc75ISJff_w" name="maschine" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.Maschine">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_XfJZ2VdAEeyZc75ISJff_w" name="initMaschine()" content="def maschineVar = new com.company.model.Maschine()&#xD;&#xA;maschineVar.nameAntragsteller = maschineInput?.nameAntragsteller&#xD;&#xA;maschineVar.nameMaschine = maschineInput?.nameMaschine&#xD;&#xA;maschineVar.seriennummer = maschineInput?.seriennummer&#xD;&#xA;maschineVar.hersteller = maschineInput?.hersteller&#xD;&#xA;maschineVar.defekt = {&#xD;&#xA;&#x9;//Retrieve aggregated DefektTyp using its DAO and persistenceId&#xD;&#xA;&#x9;def defektTypVar = defektTypDAO.findByPersistenceId(maschineInput?.defekt?.persistenceId_string?.trim() ? maschineInput.defekt.persistenceId_string.toLong() : null)&#xD;&#xA;&#x9;if (!defektTypVar) {&#xD;&#xA;&#x9;&#x9;if (maschineInput?.defekt?.persistenceId_string?.trim() ? maschineInput.defekt.persistenceId_string.toLong() : null) {&#xD;&#xA;&#x9;&#x9;&#x9;throw new IllegalArgumentException(&quot;The aggregated reference of type `DefektTyp` with the persistence id &quot; + maschineInput?.defekt?.persistenceId_string?.trim() ? maschineInput.defekt.persistenceId_string.toLong() : null + &quot; has not been found.&quot;)&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;return null&#xD;&#xA;&#x9;}&#xD;&#xA;&#x9;return defektTypVar}()&#xD;&#xA;maschineVar.beschreibung = maschineInput?.beschreibung&#xD;&#xA;return maschineVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Maschine">
-          <referencedElements xmi:type="process:ContractInput" xmi:id="_XfJZ2ldAEeyZc75ISJff_w" name="maschineInput" type="COMPLEX"/>
-          <referencedElements xmi:type="expression:Expression" xmi:id="_XfJZ21dAEeyZc75ISJff_w" name="defektTypDAO" content="defektTypDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.DefektTypDAO" returnTypeFixed="true"/>
-        </defaultValue>
-      </data>
-      <data xmi:type="process:BusinessObjectData" xmi:id="_P2cjEFdAEeyZc75ISJff_w" name="statusReparatur" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.StatusReparatur">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_ZHiT8ldAEeyZc75ISJff_w" name="initStatusReparatur()" content="def statusReparaturVar = new com.company.model.StatusReparatur()&#xD;&#xA;statusReparaturVar.status = statusReparaturInput?.status&#xD;&#xA;return statusReparaturVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.StatusReparatur">
-          <referencedElements xmi:type="process:ContractInput" xmi:id="_ZHiT81dAEeyZc75ISJff_w" name="statusReparaturInput" type="COMPLEX"/>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_F6WbMFzDEey9ZKKEy0NCwA" name="maschine" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.Maschine">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_KUXIZ1zDEey9ZKKEy0NCwA" name="initMaschine()" content="def maschineVar = new com.company.model.Maschine()&#xD;&#xA;maschineVar.nameAntragsteller = maschineInput?.nameAntragsteller&#xD;&#xA;maschineVar.nameMaschine = maschineInput?.nameMaschine&#xD;&#xA;maschineVar.seriennummer = maschineInput?.seriennummer&#xD;&#xA;maschineVar.hersteller = maschineInput?.hersteller&#xD;&#xA;maschineVar.defekt = maschineInput?.defekt&#xD;&#xA;maschineVar.beschreibung = maschineInput?.beschreibung&#xD;&#xA;return maschineVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Maschine">
+          <referencedElements xmi:type="process:ContractInput" xmi:id="_KUXIaFzDEey9ZKKEy0NCwA" name="maschineInput" type="COMPLEX"/>
         </defaultValue>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_iluT9ExDEeyPd6UCU1TUug">
-        <targetForm xmi:type="expression:Expression" xmi:id="_9MfTcFdBEeyZc75ISJff_w" name="defektMelden" content="bf29720a-3c03-4c5a-8a8c-adf4782ce335" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_9MfTcFdBEeyZc75ISJff_w" name="defektMelden" content="8978a360-4c3a-4bef-a11f-0002432544a8" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_iluT9kxDEeyPd6UCU1TUug">
         <targetForm xmi:type="expression:Expression" xmi:id="_iluT90xDEeyPd6UCU1TUug" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -223,14 +311,14 @@
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_9ypOIFc5EeyZc75ISJff_w" name="elektrischerDefekt" target="_iluT50xDEeyPd6UCU1TUug" source="_9yA8AFc5EeyZc75ISJff_w">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_9yp1MFc5EeyZc75ISJff_w"/>
-        <condition xmi:type="expression:Expression" xmi:id="_9yp1MVc5EeyZc75ISJff_w" name="newScript()" content="maschine.defekt.elektrisch" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_7bNRIFdDEeyZc75ISJff_w" name="maschine" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.Maschine"/>
+        <condition xmi:type="expression:Expression" xmi:id="_9yp1MVc5EeyZc75ISJff_w" name="newScript()" content="maschine.defekt == &quot;Elektrisch&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_O9a-MFzDEey9ZKKEy0NCwA" name="maschine" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.Maschine"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_AEcRoFc6EeyZc75ISJff_w" name="mechanischer Defekt" target="__nw8sFc5EeyZc75ISJff_w" source="_9yA8AFc5EeyZc75ISJff_w">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_AEc4sFc6EeyZc75ISJff_w"/>
-        <condition xmi:type="expression:Expression" xmi:id="_AEc4sVc6EeyZc75ISJff_w" name="newScript()" content="maschine.defekt.mechanisch" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_9-3gsFdDEeyZc75ISJff_w" name="maschine" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.Maschine"/>
+        <condition xmi:type="expression:Expression" xmi:id="_AEc4sVc6EeyZc75ISJff_w" name="newScript()" content="maschine.defekt == &quot;Mechanisch&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_ROJqsFzDEey9ZKKEy0NCwA" name="maschine" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.Maschine"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_TMSFMFc6EeyZc75ISJff_w" target="_SpDcUFc6EeyZc75ISJff_w" source="_iluT50xDEeyPd6UCU1TUug">
@@ -244,7 +332,7 @@
       <connections xmi:type="process:SequenceFlow" xmi:id="_vl17wFc6EeyZc75ISJff_w" target="_hjk64Fc6EeyZc75ISJff_w" source="_SpDcUFc6EeyZc75ISJff_w">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_vl17wVc6EeyZc75ISJff_w"/>
         <condition xmi:type="expression:Expression" xmi:id="_vl17wlc6EeyZc75ISJff_w" name="newScript()" content="maschine.ersatzteilBenoetigt" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_DwQtAFdDEeyZc75ISJff_w" name="maschine" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.Maschine"/>
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_ie72AFzDEey9ZKKEy0NCwA" name="maschine" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.Maschine"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_1NPpIFc6EeyZc75ISJff_w" target="_0s244Fc6EeyZc75ISJff_w" source="_hjk64Fc6EeyZc75ISJff_w">
@@ -258,13 +346,13 @@
       <connections xmi:type="process:SequenceFlow" xmi:id="_CuRlMFc7EeyZc75ISJff_w" target="_AcP4MFc7EeyZc75ISJff_w" source="_0s244Fc6EeyZc75ISJff_w">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_CuSMQFc7EeyZc75ISJff_w"/>
         <condition xmi:type="expression:Expression" xmi:id="_CuSMQVc7EeyZc75ISJff_w" name="newScript()" content="!maschine.ersatzteilVorraetig" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_w6hgoFdDEeyZc75ISJff_w" name="maschine" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.Maschine"/>
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_qojogFzDEey9ZKKEy0NCwA" name="maschine" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.Maschine"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_GQsjEFc7EeyZc75ISJff_w" target="_exqM4Fc6EeyZc75ISJff_w" source="_iuDUgFc7EeyZc75ISJff_w">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_GQsjEVc7EeyZc75ISJff_w"/>
-        <condition xmi:type="expression:Expression" xmi:id="_GQtKIFc7EeyZc75ISJff_w" name="newScript()" content="maschine.defekt.elektrisch" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_CrlSAFdFEeyZc75ISJff_w" name="maschine" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.Maschine"/>
+        <condition xmi:type="expression:Expression" xmi:id="_GQtKIFc7EeyZc75ISJff_w" name="newScript()" content="maschine.defekt == &quot;Elektrisch&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_ZsK_4FzDEey9ZKKEy0NCwA" name="maschine" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.Maschine"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_Qyft4Fc7EeyZc75ISJff_w" target="_QU0TYFc7EeyZc75ISJff_w" source="__nw8sFc5EeyZc75ISJff_w">
@@ -274,7 +362,7 @@
       <connections xmi:type="process:SequenceFlow" xmi:id="_byhs0Fc7EeyZc75ISJff_w" target="_aHd5MFc7EeyZc75ISJff_w" source="_QU0TYFc7EeyZc75ISJff_w">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_byhs0Vc7EeyZc75ISJff_w"/>
         <condition xmi:type="expression:Expression" xmi:id="_byhs0lc7EeyZc75ISJff_w" name="newScript()" content="maschine.ersatzteilBenoetigt" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_nh-AYFdEEeyZc75ISJff_w" name="maschine" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.Maschine"/>
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_wNiUAFzDEey9ZKKEy0NCwA" name="maschine" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.Maschine"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_cQHAsFc7EeyZc75ISJff_w" target="_TFkjwFc7EeyZc75ISJff_w" source="_QU0TYFc7EeyZc75ISJff_w" isDefault="true">
@@ -287,14 +375,14 @@
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_gR8ecFc7EeyZc75ISJff_w" target="_exqM4Fc6EeyZc75ISJff_w" source="_gR2-4Fc7EeyZc75ISJff_w">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_gR8ecVc7EeyZc75ISJff_w"/>
-        <condition xmi:type="expression:Expression" xmi:id="_gR9FgFc7EeyZc75ISJff_w" name="newScript()" content="maschine.defekt.elektrisch" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_65BUoFdEEeyZc75ISJff_w" name="maschine" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.Maschine"/>
+        <condition xmi:type="expression:Expression" xmi:id="_gR9FgFc7EeyZc75ISJff_w" name="newScript()" content="maschine.defekt == &quot;Elektrisch&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_UQvR8FzDEey9ZKKEy0NCwA" name="maschine" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.Maschine"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_h0-XcFc7EeyZc75ISJff_w" target="_TFkjwFc7EeyZc75ISJff_w" source="_gR2-4Fc7EeyZc75ISJff_w">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_h0-XcVc7EeyZc75ISJff_w"/>
-        <condition xmi:type="expression:Expression" xmi:id="_h0-Xclc7EeyZc75ISJff_w" name="newScript()" content="maschine.defekt.mechanisch" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="__pbvoFdEEeyZc75ISJff_w" name="maschine" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.Maschine"/>
+        <condition xmi:type="expression:Expression" xmi:id="_h0-Xclc7EeyZc75ISJff_w" name="newScript()" content="maschine.defekt == &quot;Mechanisch&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_WeF6UFzDEey9ZKKEy0NCwA" name="maschine" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.Maschine"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_jDpKAFc7EeyZc75ISJff_w" target="_iuDUgFc7EeyZc75ISJff_w" source="_AcP4MFc7EeyZc75ISJff_w">
@@ -303,8 +391,8 @@
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_lRCOoFc7EeyZc75ISJff_w" target="_TFkjwFc7EeyZc75ISJff_w" source="_iuDUgFc7EeyZc75ISJff_w">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_lRCOoVc7EeyZc75ISJff_w"/>
-        <condition xmi:type="expression:Expression" xmi:id="_lRC1sFc7EeyZc75ISJff_w" name="newScript()" content="maschine.defekt.mechanisch" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_FlO_sFdFEeyZc75ISJff_w" name="maschine" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.Maschine"/>
+        <condition xmi:type="expression:Expression" xmi:id="_lRC1sFc7EeyZc75ISJff_w" name="newScript()" content="maschine.defekt == &quot;Mechanisch&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_b7pIIFzDEey9ZKKEy0NCwA" name="maschine" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.Maschine"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_6tgXQFc7EeyZc75ISJff_w" target="_6I_U8Fc7EeyZc75ISJff_w" source="_TFkjwFc7EeyZc75ISJff_w">
@@ -314,19 +402,19 @@
       <connections xmi:type="process:SequenceFlow" xmi:id="_7KGzsFc7EeyZc75ISJff_w" target="_aHd5MFc7EeyZc75ISJff_w" source="_6I_U8Fc7EeyZc75ISJff_w">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_7KHawFc7EeyZc75ISJff_w"/>
         <condition xmi:type="expression:Expression" xmi:id="_7KHawVc7EeyZc75ISJff_w" name="newScript()" content="maschine.status == &quot;TeilBenoetigt&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_wD6zUFdEEeyZc75ISJff_w" name="maschine" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.Maschine"/>
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_xetoAFzDEey9ZKKEy0NCwA" name="maschine" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.Maschine"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_DqbO8Fc8EeyZc75ISJff_w" target="_CysVsFc8EeyZc75ISJff_w" source="_6I_U8Fc7EeyZc75ISJff_w">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_DqbO8Vc8EeyZc75ISJff_w"/>
         <condition xmi:type="expression:Expression" xmi:id="_DqbO8lc8EeyZc75ISJff_w" name="newScript()" content="maschine.status == &quot;Erfolgreich&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_ztfiEFdEEeyZc75ISJff_w" name="maschine" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.Maschine"/>
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_r9NuUFzDEey9ZKKEy0NCwA" name="maschine" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.Maschine"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_Y7958Fc8EeyZc75ISJff_w" target="_UzCVsFc8EeyZc75ISJff_w" source="_6I_U8Fc7EeyZc75ISJff_w">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_Y7958Vc8EeyZc75ISJff_w"/>
         <condition xmi:type="expression:Expression" xmi:id="_Y7958lc8EeyZc75ISJff_w" name="newScript()" content="maschine.status == &quot;Totalschaden&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_1569YFdEEeyZc75ISJff_w" name="maschine" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.Maschine"/>
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_tKzi0FzDEey9ZKKEy0NCwA" name="maschine" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.Maschine"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_exgxAFc8EeyZc75ISJff_w" target="_bXuxwFc8EeyZc75ISJff_w" source="_exqM4Fc6EeyZc75ISJff_w">
@@ -336,19 +424,19 @@
       <connections xmi:type="process:SequenceFlow" xmi:id="_iB-cMFc8EeyZc75ISJff_w" target="_hjk64Fc6EeyZc75ISJff_w" source="_bXuxwFc8EeyZc75ISJff_w">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_iB-cMVc8EeyZc75ISJff_w"/>
         <condition xmi:type="expression:Expression" xmi:id="_iB-cMlc8EeyZc75ISJff_w" name="newScript()" content="maschine.status.equalsIgnoreCase(&quot;TeilBenoetigt&quot;)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_uWVQIFdEEeyZc75ISJff_w" name="maschine" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.Maschine"/>
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_ka3-QFzDEey9ZKKEy0NCwA" name="maschine" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.Maschine"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_jQCKwFc8EeyZc75ISJff_w" target="_CysVsFc8EeyZc75ISJff_w" source="_bXuxwFc8EeyZc75ISJff_w">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_jQCKwVc8EeyZc75ISJff_w"/>
         <condition xmi:type="expression:Expression" xmi:id="_jQCKwlc8EeyZc75ISJff_w" name="newScript()" content="maschine.status.equalsIgnoreCase(&quot;Erfolgreich&quot;)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_xlhI8FdEEeyZc75ISJff_w" name="maschine" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.Maschine"/>
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_oSr9UFzDEey9ZKKEy0NCwA" name="maschine" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.Maschine"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_nPqpEFc8EeyZc75ISJff_w" target="_k0QWkFc8EeyZc75ISJff_w" source="_bXuxwFc8EeyZc75ISJff_w">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_nPqpEVc8EeyZc75ISJff_w"/>
         <condition xmi:type="expression:Expression" xmi:id="_nPqpElc8EeyZc75ISJff_w" name="newScript()" content="maschine.status == &quot;Totalschaden&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_iZ4FMFdEEeyZc75ISJff_w" name="maschine" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.Maschine"/>
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_m9QbcFzDEey9ZKKEy0NCwA" name="maschine" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.Maschine"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_u15aoFc8EeyZc75ISJff_w" target="_tHuBkFc8EeyZc75ISJff_w" source="_CysVsFc8EeyZc75ISJff_w">
@@ -358,7 +446,7 @@
       <connections xmi:type="process:SequenceFlow" xmi:id="_zIDzYFc8EeyZc75ISJff_w" target="_9yA8AFc5EeyZc75ISJff_w" source="_tHuBkFc8EeyZc75ISJff_w">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_zIDzYVc8EeyZc75ISJff_w"/>
         <condition xmi:type="expression:Expression" xmi:id="_zIEacFc8EeyZc75ISJff_w" name="newScript()" content="maschine.status == &quot;UeberarbeitungNoetig&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_QSGyEFdFEeyZc75ISJff_w" name="maschine" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.Maschine"/>
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_fNtV0FzDEey9ZKKEy0NCwA" name="maschine" dataType="_iluUFExDEeyPd6UCU1TUug" className="com.company.model.Maschine"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_4b4dcFc8EeyZc75ISJff_w" target="_35rIQFc8EeyZc75ISJff_w" source="_tHuBkFc8EeyZc75ISJff_w" isDefault="true">
@@ -370,22 +458,13 @@
       <actors xmi:type="process:Actor" xmi:id="_AwsXEFG9EeyQ3LYGAULVzQ" name="Elektriker"/>
       <actors xmi:type="process:Actor" xmi:id="_BqKVsFG9EeyQ3LYGAULVzQ" name="Maschinenführer" initiator="true"/>
       <contract xmi:type="process:Contract" xmi:id="_iluT_ExDEeyPd6UCU1TUug">
-        <inputs xmi:type="process:ContractInput" xmi:id="_3GnaQFHDEeyQ3LYGAULVzQ" name="defektTypInput" type="COMPLEX" dataReference="defektTyp">
-          <inputs xmi:type="process:ContractInput" xmi:id="_3GnaQVHDEeyQ3LYGAULVzQ" name="elektrisch"/>
-          <inputs xmi:type="process:ContractInput" xmi:id="_3GnaQlHDEeyQ3LYGAULVzQ" name="mechanisch"/>
-        </inputs>
-        <inputs xmi:type="process:ContractInput" xmi:id="_XfJZ0FdAEeyZc75ISJff_w" name="maschineInput" type="COMPLEX" dataReference="maschine">
-          <inputs xmi:type="process:ContractInput" xmi:id="_XfJZ0VdAEeyZc75ISJff_w" name="nameAntragsteller"/>
-          <inputs xmi:type="process:ContractInput" xmi:id="_XfJZ0ldAEeyZc75ISJff_w" name="nameMaschine"/>
-          <inputs xmi:type="process:ContractInput" xmi:id="_XfJZ01dAEeyZc75ISJff_w" name="seriennummer"/>
-          <inputs xmi:type="process:ContractInput" xmi:id="_XfJZ1FdAEeyZc75ISJff_w" name="hersteller"/>
-          <inputs xmi:type="process:ContractInput" xmi:id="_XfJZ1VdAEeyZc75ISJff_w" name="defekt" type="COMPLEX">
-            <inputs xmi:type="process:ContractInput" xmi:id="_XfJZ1ldAEeyZc75ISJff_w" name="persistenceId_string"/>
-          </inputs>
-          <inputs xmi:type="process:ContractInput" xmi:id="_XfJZ11dAEeyZc75ISJff_w" name="beschreibung"/>
-        </inputs>
-        <inputs xmi:type="process:ContractInput" xmi:id="_ZHiT8FdAEeyZc75ISJff_w" name="statusReparaturInput" type="COMPLEX" dataReference="statusReparatur">
-          <inputs xmi:type="process:ContractInput" xmi:id="_ZHiT8VdAEeyZc75ISJff_w" name="status"/>
+        <inputs xmi:type="process:ContractInput" xmi:id="_KUXIYFzDEey9ZKKEy0NCwA" name="maschineInput" type="COMPLEX" dataReference="maschine">
+          <inputs xmi:type="process:ContractInput" xmi:id="_KUXIYVzDEey9ZKKEy0NCwA" name="nameAntragsteller"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_KUXIYlzDEey9ZKKEy0NCwA" name="nameMaschine"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_KUXIY1zDEey9ZKKEy0NCwA" name="seriennummer"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_KUXIZFzDEey9ZKKEy0NCwA" name="hersteller"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_KUXIZVzDEey9ZKKEy0NCwA" name="defekt"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_KUXIZlzDEey9ZKKEy0NCwA" name="beschreibung"/>
         </inputs>
       </contract>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_iluT_UxDEeyPd6UCU1TUug">
